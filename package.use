@@ -1,0 +1,3 @@
+cross-i686-pc-linux-gnu/gcc -cxx -openmp
+cross-i686-pc-linux-musl/gcc -cxx -openmp
+cross-x86_64-pc-linux-musl/gcc -cxx -openmp
