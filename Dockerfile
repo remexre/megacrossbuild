@@ -1,4 +1,4 @@
-FROM gentoo/stage3-amd64-nomultilib
+FROM gentoo/stage3-amd64
 
 # Dependencies
 RUN emerge --sync
