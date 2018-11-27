@@ -1,7 +1,8 @@
 FROM alpine
 
 RUN apk add --no-cache automake bash bison file flex curl g++ gawk gcc gperf help2man \
-	linux-headers make musl-dev ncurses-dev parallel patch python3 rsync sed tar texinfo wget xz
+	linux-headers make musl-dev ncurses-dev ninja parallel patch python3 rsync sed tar \
+	texinfo wget xz
 RUN curl http://crosstool-ng.org/download/crosstool-ng/crosstool-ng-1.23.0.tar.xz | tar xJ && \
 	cd crosstool-ng-1.23.0 && \
 	./configure --prefix=/usr/local && \
